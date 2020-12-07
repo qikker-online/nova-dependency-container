@@ -1,5 +1,5 @@
 {
-    "name": "epartment/nova-dependency-container",
+    "name": "qikker-online/nova-dependency-container",
     "description": "A Laravel Nova field container allowing to depend on other fields values",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Epartment\\NovaDependencyContainer\\": "src/"
+            "QikkerOnline\\NovaDependencyContainer\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Epartment\\NovaDependencyContainer\\FieldServiceProvider"
+                "QikkerOnline\\NovaDependencyContainer\\FieldServiceProvider"
             ]
         }
     },
