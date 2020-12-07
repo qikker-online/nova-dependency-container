@@ -20,8 +20,12 @@ trait HasDependencies
      */
     public function availableFields(NovaRequest $request)
     {
+        $method = method_exists($this, 'fieldsMethod') ?
+            $this->fieldsMethod($request) :
+            'fields';
+
         // needs to be filtered once to resolve Panels
-        $fields = $this->filter($this->fields($request));
+        $fields = $this->filter($this->{$method}($request));
         $availableFields = [];
 
         foreach ($fields as $field) {
