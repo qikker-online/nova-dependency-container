@@ -1,8 +1,8 @@
 <?php
 
-namespace Epartment\NovaDependencyContainer\Http\Controllers;
+namespace QikkerOnline\NovaDependencyContainer\Http\Controllers;
 
-use Epartment\NovaDependencyContainer\Http\Requests\ActionRequest;
+use QikkerOnline\NovaDependencyContainer\Http\Requests\ActionRequest;
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
